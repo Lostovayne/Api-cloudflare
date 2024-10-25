@@ -1,0 +1,27 @@
+compatibility_date = "2024-10-24"
+compatibility_flags = ["nodejs_compat"]
+main = "src/index.ts"
+name = "api-cloudflare"
+
+[vars]
+MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "DB"
+database_id = "-------------------"
+database_name = "api-cloudflare"
+
+# [ai]
+# binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1

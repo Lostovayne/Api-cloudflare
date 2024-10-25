@@ -1,0 +1,19 @@
+{
+  "name": "api-cloudflare",
+  "scripts": {
+    "dev": "wrangler dev",
+    "db:generate": "drizzle-kit generate",
+    "db:up": "drizzle-kit up",
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "drizzle-orm": "^0.35.3",
+    "hono": "^4.6.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240925.0",
+    "drizzle-kit": "^0.26.2",
+    "wrangler": "^3.79.0"
+  }
+}
